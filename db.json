@@ -15,5 +15,10 @@
   "flash": [
     { "id": 1, "x": 3.5, "y": 10.0, "width":100.0, "height":10.55, "type":"text", "font_size":60.0, "text":"5ส ที่ต้องรู้"},
     { "id": 2, "x": 0.0, "y": 70.0, "width":90.0, "height":30, "type":"text", "font_size":20.0, "text":"This library provides an easy way to combine images and audio into a video or merge multiple videos into one. Features. create a video from a single image"}
+  ],
+  "player": [
+    { "id": 1, "first_name": "sdffd", "last_name": "yuy", "team":"BGRRR"},
+    { "id": 2, "first_name": "uioyuoiuo", "last_name": "kkj", "team":"EERR"},
+    { "id": 3, "first_name": "bnbnn", "last_name": "hjghg", "team":"FF"}
   ]
 }
