@@ -20,5 +20,87 @@
     { "id": 1, "first_name": "sdffd", "last_name": "yuy", "team":"BGRRR"},
     { "id": 2, "first_name": "uioyuoiuo", "last_name": "kkj", "team":"EERR"},
     { "id": 3, "first_name": "bnbnn", "last_name": "hjghg", "team":"FF"}
-  ]
+  ],
+  "flash": {
+    "attrs": {
+      // ในนี้ attrs ของตัว canvas 
+      "width":375,//ต้องเลือก size เริ่มต้น สำหรับคิดค่า อัตราส่วนของจอ เพื่อจะได้มีพวามกว้างพื้นฐานที่เท่ากันทุก device
+      "height":667
+    },
+    "id":1,
+    "name":"Name of FlashCard",
+    "background_color":"Name of FlashCard",
+    "image":"image url of cover Flash Card",//save ส่งไปตอนสร้างครั้งแรก และ ครั้งที่ Edit
+    "sound": "url of sound in Flash",//User เลือก จาก list 
+    "children":[//= Array of Element
+      {
+        "id":1,
+        "x":38.00001235961827, //X , Y บนมือถือถ้ามีการ rotate view ค่า x,y, width,height จะเปลี่ยน จึงอย่างใช้เป็น center แทน
+          "y":131,
+          "width":200,
+          "height":60,//text can calculate height from font //ถ้ามี height ส่งมาด้วยจะดีกว่า
+          "rotation":0,//user rotated degrees
+          "scale":1.0,//use zoom
+          "type":"text",
+            "text":"font with orange color and Italic 🧚",
+          "font_size":20,
+          "font_weight":"regular",//regular, bold ....
+          "text_color":"#FF5733",
+          "text_alignment":"left"//left, center, right
+      },
+      {
+        "id":2,
+        "x":60,
+          "y":131,
+          "width":200,
+          "height":60,
+          "rotation":45.0,
+          "scale":1.0,
+          "type":"image",
+          "src":"url of image"
+      },
+      {
+        "id":112,
+        "x":70,
+          "y":131,
+          "width":320,//ขนาดของ video ต้อง ใช้จะแปลงลง
+          "height":180,
+          "rotation":0,
+          "scale":1.0,
+          "type":"video",
+          "src":"url of video",
+          "thumbnail_image":"image cover video"//อาจจะจำเป็นถ้าไม่อยากให้ตอนโหลดเป็นสีดำ 
+      },
+      {
+        "id":3,
+        "x":70,
+          "y":131,
+          "width":200,//square for easy to manage
+          "height":200,
+          "rotation":0,
+          "scale":1.0,
+          "type":"shape",
+          "src":"url of vector SVG"
+      },
+      {
+        "id":4,
+        "start_x":70,
+          "start_y":131,//ถ้าจะเอาแบบ App Canvas ต้องใช้ XY อย่างละคู่ มี start - end
+          "end_x":300,
+          "end_y":120,
+          "stroke":"black",
+          "stroke_width":4,
+          "type":"arrow",
+          "type_arrow":"arrow",
+          "src":"url of vector SVG" //Arrow ดูแล้ว ถ้า 3 platform สร้างเองก็ทำใช้เวลานานหน่อย ส่งมาเป็น SVG ก็ได้
+      },
+      {
+        "id":5,
+          "title":"อันนี้จะใช้ แบบ Live Question ก็",
+          "choise_list":["A","B","C"],//.....ตามเห็นสมควรรอดู design review อีกที
+          "ans":1,
+          "type":"question"
+      }
+    ]
+  }
 }
